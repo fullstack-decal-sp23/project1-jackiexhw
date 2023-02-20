@@ -1,0 +1,22 @@
+h1 {
+    font-family: "Andale Mono", AndaleMono, monospace;
+    font-size: 5vh;
+    font-weight: 1000;
+}
+
+h2 {
+    font-family: "Andale Mono", AndaleMono, monospace;
+    font-weight: 1000;
+}
+
+img {
+    max-height: 50vh;
+    width: auto; 
+    /* border-radius: 25px; */
+    border-radius: 50%; /* circular image */
+  }
+
+.center {
+    margin-top: 15vh;
+    text-align: center;
+}
