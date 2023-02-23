@@ -6,22 +6,89 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="styles.css" />
     <title>Jackie Pei</title>
-    <author>Jackie</author>
+    <meta name="author", content="Jackie Pei">
 </head>
+
 <body>
-    
     <div class="center">
-        <img src="images/profilePic.JPG", alt="my picture">
-        <h1>Jackie Pei</h1>
+        <div class="outer-flex">
+            <div class="narrow-col">
+                <img src="images/profilePic.JPG", alt="my picture">
+                <h1>Jackie Pei</h1>
+            </div>
+            <div class="wide-col">
+                <h2>About</h2>
+                <p>
+                    Hi I'm Jackie! I'm a junior studying computer science and minoring in data science at UC Berkeley!
+                    Some things I think are pretty cool: plants, birds, dancing, and capybaras.
+                </p>
+                <button class="btn" onclick="window.open('https://en.wikipedia.org/wiki/Capybara','_blank')">Capybara</button>
+                <button></button>
+            </div>
+        </div>
     </div>
 
-    <h2>About</h2>
-    <p>Hi I'm Jackie!</p>
-
     <h2>Work</h2>
-    <p>so much work</p>
 
+    
+
+    <h3>Projects</h3>
+    <div class="grid-container"> 
+        <div class="grid-item">
+            <h4>RookieDB</h4>
+            <p>Implemented a database management system for CS 186: Database Systems</p>
+        </div>
+        <div class="grid-item">
+            <h4>Gitlet</h4>
+            <p>File tracking system that is a subset of Git.</p>
+        </div>
+        <div class="grid-item">
+            <h4>BYOW</h4>
+            <p>Pseudo-random world generator with an avatar that can traverse through the world.</p>
+        </div>
+    </div>
+
+    <h3>Involvement</h3>
+    <div class="grid-container">    
+        <div class="grid-item">
+            <h4>AFX Dance</h4>
+            <p>I'm a part of an open-style dance organization AFX at UC Berkeley.</p>
+        </div>
+        <div class="grid-item">
+            <h4>CS61A Course Staff</h4>
+            <p>Current Teaching Assistant for Computer Science 61A, one of Berkeley's introductory computer science courses.</p>
+        </div>
+        <div class="grid-item">
+            <h4>CSM</h4>
+            <p>Previously a mentor for Computer Science Mentors, teaching 61A.</p>
+        </div>
+    <div/>
+
+    <br>
     <h2>Contact</h2>
     <p>e-mail:jackiew@berkeley.edu</p>
+    <a href="https://github.com/jackiexhw" target="_blank">Github</a>
+
+
+    <h5>A fantastic form</h5>
+    <form class="form">
+        <h6>First Name</h6>
+        <input type="text"/>
+        <h6>Last Name</h6>
+        <input type="text"/>
+        <h6>Better Fruit</h6>
+        <input type="radio" id="fruit1"/>
+        <label for="fruit1">peach</label>
+        <input type="radio" id="fruit2"/>
+        <label for="fruit2">mango</label>
+        <br>
+        <input class="special-class" type="submit"/>
+    </form>
+ 
 </body>
+
+<script>
+    const submitButton = document.querySelector('.special-class');
+    submitButton.addEventListener("click", function(){alert("You rock!");});
+</script>
 </html>

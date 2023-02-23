@@ -1,3 +1,7 @@
+* {
+    font-family: Verdana, sans-serif;
+}
+
 h1 {
     font-family: "Andale Mono", AndaleMono, monospace;
     font-size: 5vh;
@@ -14,9 +18,46 @@ img {
     width: auto; 
     /* border-radius: 25px; */
     border-radius: 50%; /* circular image */
-  }
+}
+
+.outer-flex {
+    display: flex;
+    flex-direction: row;
+}
+
+.narrow-col {
+    width: 30%;
+    margin: 5vh;
+    text-align: center;
+}
+
+.wide-col {
+    width: 70%;
+    margin: 5vh;
+    text-align: left;
+}
 
 .center {
-    margin-top: 15vh;
     text-align: center;
+    padding: 10vh;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+
+.grid-item {
+    background-color: #F4F4F4;
+    max-width: 80%;
+    padding: 3vh;
+    margin: 3vh;
+}
+
+.grid-item:hover {
+    background-color: #F3E5FF ;
+}
+
+#special-class {
+    opacity: 0.5;
 }
